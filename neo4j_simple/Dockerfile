@@ -13,14 +13,14 @@ ADD supervisord.conf /etc/
 # EXPOSE 1337
 
 # setup envs - to review and implement env usage for BRANCH selection
-ENV NEO4J_BRANCH 2.2.1
+ENV NEO4J_BRANCH 2.2.2
 ENV NEO4J_HOME /srv/neo4j
 WORKDIR ${NEO4J_HOME}
 
 # setup NEO4j
 RUN mkdir -p /srv/neo4j 
-RUN curl -o /srv/neo4j/neo4j-community-2.2.1-unix.tar.gz http://neo4j.com/artifact.php?name=neo4j-community-2.2.1-unix.tar.gz 
-RUN tar xvzf /srv/neo4j/neo4j-community-2.2.1-unix.tar.gz --strip-components 1
+RUN curl -o /srv/neo4j/neo4j-community-2.2.2-unix.tar.gz http://neo4j.com/artifact.php?name=neo4j-community-2.2.2-unix.tar.gz 
+RUN tar xvzf /srv/neo4j/neo4j-community-2.2.2-unix.tar.gz --strip-components 1
 
 # configure neo4j
 RUN rm -rf /srv/neo4j/conf/neo4j.properties
