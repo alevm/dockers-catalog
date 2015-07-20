@@ -11,6 +11,7 @@ RUN yum -y update; yum clean all
 RUN yum -y install epel-release tar ; yum clean all
 RUN yum -y install nginx ; yum clean all
 ADD nginx.conf /etc/nginx/nginx.conf
+ADD conf /etc/nginx/conf
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 RUN curl https://git.centos.org/sources/httpd/c7/acf5cccf4afaecf3afeb18c50ae59fd5c6504910 \
     | tar -xz -C /usr/share/nginx/html \
