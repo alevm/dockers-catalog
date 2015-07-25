@@ -24,6 +24,8 @@ COPY index.html /usr/share/nginx/html/index.html
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
 RUN ln -sf /dev/stderr /var/log/nginx/error.log
 
+EXPOSE 80
+
 #start nginx
 CMD ["nginx", "-g", "daemon off;"]
 

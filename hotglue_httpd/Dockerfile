@@ -25,5 +25,8 @@ ENV APACHE_RUN_DIR=/var/run/apache2
 # Execute the apache daemon in the foreground so we can treat the container as an 
 # executeable and it wont immediately return.
 
+EXPOSE 80
+EXPOSE 443
+
 CMD /usr/sbin/apache2ctl -D FOREGROUND
 
