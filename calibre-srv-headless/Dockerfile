@@ -5,8 +5,9 @@ MAINTAINER An Val "av@levm.eu"
 RUN yum update -y
 RUN yum install -y sudo tar libtool-ltdl
 RUN mkdir /opt/calibre
-ADD http://download.calibre-ebook.com/2.33.0/calibre-2.33.0-x86_64.txz /opt/
-RUN tar xvf /opt/calibre-2.19.0-x86_64.txz -C /opt/calibre
+#ADD http://download.calibre-ebook.com/2.33.0/calibre-2.33.0-x86_64.txz /opt/
+RUN curl -o /opt/calibre.txz http://download.calibre-ebook.com/2.33.0/calibre-2.33.0-x86_64.txz
+RUN tar xvf /opt/calibre.txz -C /opt/calibre
 RUN mkdir /opt/calibre-library
 ENV LD_LIBRARY_PATH /opt/calibre/lib
 VOLUME /opt/calibre-library
