@@ -19,6 +19,7 @@ RUN curl https://git.centos.org/sources/httpd/c7/acf5cccf4afaecf3afeb18c50ae59fd
 RUN sed -i -e 's/Apache/nginx/g' -e '/apache_pb.gif/d' \ 
     /usr/share/nginx/html/index.html
 
+VOLUME /etc/nginx/conf.d
 EXPOSE 80
 
 CMD [ "/usr/sbin/nginx" ]
