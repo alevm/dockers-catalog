@@ -16,6 +16,7 @@ RUN chmod 755 /config_mariadb.sh
 RUN chmod 755 /create_db.sh
 RUN chmod 755 /start.sh
 RUN /config_mariadb.sh
+
 EXPOSE 3306
 
 CMD ["/bin/bash", "/start.sh"]
