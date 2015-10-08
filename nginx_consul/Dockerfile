@@ -8,8 +8,8 @@ ADD consul-template.service /etc/service/consul-template/run
 ADD nginx.conf /etc/consul-templates/nginx.conf
 ADD nginx.service /etc/service/nginx/run
 ADD conf.d /etc/nginx/conf.d
-RUN chown -R nginx.nginx /etc/consul-templates/nginx.conf
-RUN chown -R nginx.nginx  /etc/service/nginx
+RUN chmod 777 -R /etc/consul-templates/nginx.conf
+RUN chmod 777 -R /etc/service/nginx
 
  
 CMD ["/usr/bin/runsvdir", "/etc/service"]
