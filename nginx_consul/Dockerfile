@@ -4,7 +4,7 @@ MAINTAINER The CentOS Project <cloud-ops@centos.org>
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release tar ; yum clean all
 RUN yum -y install nginx ; yum clean all
-
+RUN yum -y install runit
 
 ADD consul-template /bin/consul-template
  
@@ -18,4 +18,5 @@ RUN chmod 777 -R /etc/service/nginx
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
  
+
 CMD ["/usr/bin/runsvdir", "/etc/service"]
