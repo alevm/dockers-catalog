@@ -12,6 +12,7 @@ RUN mkdir -p /etc/service/nginx && mkdir -p /etc/service/consul-template && rm /
 ADD consul-template.service /etc/service/consul-template/run
 ADD conf.d/template-hotglue.levm.eu.conf /etc/consul-templates/nginx.conf
 ADD nginx.service /etc/service/nginx/run
+ADD nginx.conf.org /etc/nginx/nginx.conf
 RUN chmod 777 -R /etc/consul-templates/nginx.conf
 RUN chmod 777 -R /etc/service/nginx
 
