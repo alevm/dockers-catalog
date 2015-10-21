@@ -15,7 +15,7 @@ ADD nginx.service /etc/service/nginx/run
 RUN chmod 777 -R /etc/consul-templates/nginx.conf
 RUN chmod 777 -R /etc/service/nginx
 
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+#RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
  
 EXPOSE 80
