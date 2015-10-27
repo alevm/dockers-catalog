@@ -1,4 +1,7 @@
-FROM nginx:latest
+#FROM nginx:latest
+
+FROM    centos:centos7
+RUN yum install -y nginx nmap telnet
 
 ENTRYPOINT ["/bin/start.sh"]
 EXPOSE 80
