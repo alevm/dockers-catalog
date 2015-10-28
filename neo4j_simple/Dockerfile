@@ -29,8 +29,7 @@ RUN rm -rf /srv/neo4j/conf/neo4j-server.properties
 ADD neo4j.properties /srv/neo4j/conf/neo4j.properties
 ADD neo4j-server.properties /srv/neo4j/conf/neo4j-server.properties
 
-EXPOSE 80
-EXPOSE 443
+EXPOSE 7474
 
 CMD ["/usr/bin/supervisord"]
 
