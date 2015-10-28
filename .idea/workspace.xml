@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7e1e2fa-4230-412e-92f0-ddb19b80772a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neo4j_simple/Dockerfile" afterPath="$PROJECT_DIR$/neo4j_simple/Dockerfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dockers-catalog.iws" />
@@ -28,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/nginx_proxy/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="22" />
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -74,20 +73,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="start.sh" pinned="false" current-in-tab="false">
+      <file leaf-file-name="start.sh" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-nginx-consul/start.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.033076074">
               <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/neo4j_simple/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3472988">
+            <state vertical-scroll-proportion="0.0">
               <caret line="21" column="107" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
               <folding />
             </state>
@@ -433,7 +432,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446026676975</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="neo4j addition">
+      <created>1446044654658</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1446044654658</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -474,7 +479,8 @@
     <MESSAGE value="reverting and changing docker CMD for consul" />
     <MESSAGE value="consul nginx" />
     <MESSAGE value="consul nginx - yet another centos adaptation (skipping dbus and init)" />
-    <option name="LAST_COMMIT_MESSAGE" value="consul nginx - yet another centos adaptation (skipping dbus and init)" />
+    <MESSAGE value="neo4j addition" />
+    <option name="LAST_COMMIT_MESSAGE" value="neo4j addition" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -545,10 +551,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/service.ctmpl">
+    <entry file="file://$PROJECT_DIR$/neo4j_simple/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
+          <caret line="21" column="107" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
           <folding />
         </state>
       </provider>
@@ -556,7 +562,7 @@
     <entry file="file://$PROJECT_DIR$/nginx_proxy/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="22" />
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -569,18 +575,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/start.sh">
+    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/service.ctmpl">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
+          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/neo4j_simple/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/start.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3472988">
-          <caret line="21" column="107" selection-start-line="21" selection-start-column="107" selection-end-line="21" selection-end-column="107" />
+        <state vertical-scroll-proportion="0.033076074">
+          <caret line="2" column="103" selection-start-line="2" selection-start-column="103" selection-end-line="2" selection-end-column="103" />
           <folding />
         </state>
       </provider>
