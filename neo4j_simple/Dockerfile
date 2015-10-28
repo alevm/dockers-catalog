@@ -19,7 +19,7 @@ WORKDIR ${NEO4J_HOME}
 
 # setup NEO4j
 RUN mkdir -p /srv/neo4j 
-RUN curl -o /srv/neo4j/neo4j-community-unix.tar.gz http://neo4j.com/artifact.php?name=neo4j-community-2.2.3-unix.tar.gz
+RUN curl -o /srv/neo4j/neo4j-community-unix.tar.gz http://neo4j.com/artifact.php?name=neo4j-community-2.3.0-unix.tar.gz
 RUN tar xvzf /srv/neo4j/neo4j-community-unix.tar.gz --strip-components 1
 
 
