@@ -9,7 +9,7 @@ ENTRYPOINT ["/bin/start.sh"]
 EXPOSE 80
 VOLUME /templates
 ENV CONSUL_URL consul:8500
-
+ADD nginx.conf /etc/nginx/nginx.conf
 ADD start.sh /bin/start.sh
 #RUN rm -v /etc/nginx/conf.d/*.conf
 
