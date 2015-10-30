@@ -13,5 +13,5 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD start.sh /bin/start.sh
 #RUN rm -v /etc/nginx/conf.d/*.conf
 
-ADD https://github.com/hashicorp/consul-template/releases/download/v0.7.0/consul-template_0.7.0_linux_amd64.tar.gz /usr/bin/
-RUN tar -C /usr/local/bin --strip-components 1 -zxf /usr/bin/consul-template_0.7.0_linux_amd64.tar.gz
+ADD https://github.com/hashicorp/consul-template/releases/download/v0.11.0/consul_template_0.11.0_linux_amd64.zip /usr/bin/
+RUN unzip /usr/bin/consul_template_0.11.0_linux_amd64.zip -d /usr/bin
