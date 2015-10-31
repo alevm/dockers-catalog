@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7e1e2fa-4230-412e-92f0-ddb19b80772a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-nginx-consul/Dockerfile" afterPath="$PROJECT_DIR$/docker-nginx-consul/Dockerfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-nginx-consul/nginx.conf" afterPath="$PROJECT_DIR$/docker-nginx-consul/nginx.conf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dockers-catalog.iws" />
@@ -34,21 +34,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/docker-nginx-consul/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.051136363">
+            <state vertical-scroll-proportion="0.0">
               <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nginx.conf" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/docker-nginx-consul/nginx.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.13636364">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -128,8 +128,8 @@
         <option value="$PROJECT_DIR$/docker-nginx-consul/service.ctmpl" />
         <option value="$PROJECT_DIR$/docker-nginx-consul/start.sh" />
         <option value="$PROJECT_DIR$/neo4j_simple/Dockerfile" />
-        <option value="$PROJECT_DIR$/docker-nginx-consul/nginx.conf" />
         <option value="$PROJECT_DIR$/docker-nginx-consul/Dockerfile" />
+        <option value="$PROJECT_DIR$/docker-nginx-consul/nginx.conf" />
       </list>
     </option>
   </component>
@@ -533,7 +533,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446284998192</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="latest consul-template">
+      <created>1446285216188</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1446285216188</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -988,18 +994,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/nginx.conf">
+    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/docker-nginx-consul/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.051136363">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.13636364">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding />
         </state>
       </provider>
