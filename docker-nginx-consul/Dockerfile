@@ -3,7 +3,8 @@
 FROM    centos:centos7
 RUN yum -y update; yum clean all
 RUN yum -y install epel-release tar ; yum clean all
-RUN yum -y install nginx nmap telnet tar; yum clean all
+RUN yum -y install nginx nmap telnet tar net-tools unzip; yum clean all
+
 
 ENTRYPOINT ["/bin/start.sh"]
 EXPOSE 80
