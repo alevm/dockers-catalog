@@ -1,9 +1,9 @@
 #FROM nginx:latest
 
 FROM    centos:centos7
-RUN yum -y update; yum clean all
-RUN yum -y install epel-release tar ; yum clean all
-RUN yum -y install nginx nmap telnet tar net-tools unzip; yum clean all
+RUN yum -y update
+RUN yum -y install epel-release tar
+RUN yum -y install nginx nmap telnet tar net-tools unzip
 
 
 ENTRYPOINT ["/bin/start.sh"]
