@@ -2,7 +2,7 @@ FROM centos
 MAINTAINER av@levm.eu
 
 # setup software requirements
-RUN yum install -y java-1.7.0-openjdk lsof curl tar
+RUN yum install -y java-1.7.0-openjdk lsof curl nmap telnet tar net-tools unzip bind-utils curl
 RUN rpm -Uvh http://www.mirrorservice.org/sites/dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-5.noarch.rpm
 RUN yum --enablerepo=epel install -y supervisor
 RUN mv -f /etc/supervisord.conf /etc/supervisord.conf.org
