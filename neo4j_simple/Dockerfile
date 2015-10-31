@@ -8,20 +8,13 @@ RUN yum --enablerepo=epel install -y supervisor
 RUN mv -f /etc/supervisord.conf /etc/supervisord.conf.org
 ADD supervisord.conf /etc/
 
-# setup net
-# EXPOSE 7474
-# EXPOSE 1337
-
-# setup envs - to review and implement env usage for BRANCH selection
-ENV NEO4J_BRANCH 2.2.2
-ENV NEO4J_HOME /srv/neo4j
-WORKDIR ${NEO4J_HOME}
 
 # setup NEO4j
 RUN mkdir -p /srv/neo4j
 ADD /srv/neo4j-community-unix.tar.gz
 RUN tar xvzf /srv/neo4j/neo4j-community-unix.tar.gz --strip-components 1
 
+VOLUME /srv/neo4j/data
 
 # configure neo4j
 RUN rm -rf /srv/neo4j/conf/neo4j.properties
@@ -29,7 +22,6 @@ RUN rm -rf /srv/neo4j/conf/neo4j-server.properties
 ADD neo4j.properties /srv/neo4j/conf/neo4j.properties
 ADD neo4j-server.properties /srv/neo4j/conf/neo4j-server.properties
 
-VOLUME /data
 EXPOSE 80
 
 CMD ["/usr/bin/supervisord"]
