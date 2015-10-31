@@ -2,19 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7e1e2fa-4230-412e-92f0-ddb19b80772a" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hotglue_httpd_ssh/Dockerfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/hotglue_httpd_ssh/hotglue-config.conf" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calibre-srv-headless/Dockerfile" afterPath="$PROJECT_DIR$/calibre-srv-headless/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/d3js_dev_simple/Dockerfile" afterPath="$PROJECT_DIR$/d3js_dev_simple/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docker-nginx-consul/Dockerfile" afterPath="$PROJECT_DIR$/docker-nginx-consul/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotglue_data_volume/Dockerfile" afterPath="$PROJECT_DIR$/hotglue_data_volume/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hotglue_httpd/Dockerfile" afterPath="$PROJECT_DIR$/hotglue_httpd/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mariadb_server/Dockerfile" afterPath="$PROJECT_DIR$/mariadb_server/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/neo4j_simple/Dockerfile" afterPath="$PROJECT_DIR$/neo4j_simple/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nginx_proxy/Dockerfile" afterPath="$PROJECT_DIR$/nginx_proxy/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node.js_simple/Dockerfile" afterPath="$PROJECT_DIR$/node.js_simple/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/projectlibre/Dockerfile" afterPath="$PROJECT_DIR$/projectlibre/Dockerfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shinken_server/Dockerfile" afterPath="$PROJECT_DIR$/shinken_server/Dockerfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="dockers-catalog.iws" />
@@ -69,8 +56,8 @@
       <file leaf-file-name="Dockerfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shinken_server/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2215909">
-              <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.23863636">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -729,14 +716,26 @@
       <option name="project" value="LOCAL" />
       <updated>1446322579221</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="shinken work initial">
+      <created>1446326016705</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1446326016705</updated>
+    </task>
+    <task id="LOCAL-00036" summary="shinken work initial">
+      <created>1446326512530</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1446326512530</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="27" width="960" height="1053" extended-state="4" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23229167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23229167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -790,7 +789,8 @@
     <MESSAGE value="neo4j_simple debug tools" />
     <MESSAGE value="neo4j_simple expose" />
     <MESSAGE value="shinken added" />
-    <option name="LAST_COMMIT_MESSAGE" value="shinken added" />
+    <MESSAGE value="shinken work initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="shinken work initial" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1199,8 +1199,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/shinken_server/Dockerfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2215909">
-          <caret line="13" column="3" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        <state vertical-scroll-proportion="0.23863636">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
