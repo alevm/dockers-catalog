@@ -1,4 +1,5 @@
 #FROM nginx:latest
+MAINTAINER  levm "av@levm.eu"
 
 FROM    centos:centos7
 RUN yum -y update

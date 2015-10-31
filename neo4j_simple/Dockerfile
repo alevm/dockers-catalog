@@ -1,5 +1,5 @@
 FROM centos
-MAINTAINER av@levm.eu
+MAINTAINER  levm "av@levm.eu"
 
 # setup software requirements
 RUN yum install -y java-1.7.0-openjdk lsof curl nmap telnet tar net-tools unzip bind-utils curl

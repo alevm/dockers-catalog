@@ -1,3 +1,4 @@
+MAINTAINER  levm "av@levm.eu"
 
 FROM centos:centos6
 MAINTAINER av@levm.eu

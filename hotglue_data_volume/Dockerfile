@@ -1,3 +1,5 @@
+MAINTAINER  levm "av@levm.eu"
+
 FROM ubuntu
 RUN apt-get  install git -y
 RUN git clone git://github.com/hotglue/hotglue2.git -b dev /var/www/html/hotglue

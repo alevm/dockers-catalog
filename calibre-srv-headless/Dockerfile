@@ -1,7 +1,7 @@
 # Calibre Server Dockerfile Version 0.0.1
 # host data volume mount in the docker start -v /host/path/to/library:/opt/calibre-library
 FROM fedora:latest
-MAINTAINER An Val "av@levm.eu"
+MAINTAINER  levm "av@levm.eu"
 RUN yum update -y
 RUN yum install -y sudo tar libtool-ltdl
 RUN mkdir /opt/calibre

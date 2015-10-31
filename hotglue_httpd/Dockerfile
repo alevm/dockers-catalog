@@ -1,7 +1,7 @@
 
 FROM ubuntu
 
-MAINTAINER [levm <av@levm.eu]
+MAINTAINER  levm "av@levm.eu"
 
 # Install the relevant packages
 RUN apt-get update && apt-get install apache2 libapache2-mod-php5 bind-utils curl -y

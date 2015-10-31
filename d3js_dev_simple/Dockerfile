@@ -1,7 +1,7 @@
 # Scope is quick self contained transportable devel env - severe security issue presents!
 
 FROM centos:centos7
-MAINTAINER av@levm.eu
+MAINTAINER  levm "av@levm.eu"
 #Install prereq
 RUN yum install -y epel-release
 RUN yum install -y git nginx
