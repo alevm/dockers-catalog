@@ -3,7 +3,7 @@
 FROM    centos:centos7
 RUN yum -y update
 RUN yum -y install epel-release tar
-RUN yum -y install nginx nmap telnet tar net-tools unzip dig curl
+RUN yum -y install nginx nmap telnet tar net-tools unzip bind-utils curl
 
 
 ENTRYPOINT ["/bin/start.sh"]
