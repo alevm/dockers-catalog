@@ -6,6 +6,7 @@ RUN yum -y install epel-release && yum clean all
 RUN yum -y install mariadb-server bind-utils pwgen supervisor psmisc \
     net-tools hostname && yum clean all
 
+
 ADD ./config_mariadb.sh /config_mariadb.sh
 ADD ./create_db.sh /create_db.sh
 ADD ./start.sh	/start.sh
