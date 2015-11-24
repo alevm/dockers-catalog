@@ -11,14 +11,14 @@ ADD supervisord.conf /etc/
 
 # setup NEO4j
 RUN mkdir -p /srv/neo4j
-RUN curl http://neo4j.com/artifact.php?name=neo4j-community-2.3.0-unix.tar.gz -o  /srv/neo4j/neo4j-community-unix.tar.gz
-RUN  tar xvzf /srv/neo4j/neo4j-community-unix.tar.gz --strip-components 1
+RUN  curl http://neo4j.com/artifact.php?name=neo4j-community-2.3.0-unix.tar.gz -o  /srv/neo4j/neo4j-community-unix.tar.gz
+RUN  tar xvzf /srv/neo4j/neo4j-community-unix.tar.gz --strip-components 1 -C /srv/neo4j/
 
 VOLUME /srv/neo4j/data
 
 # configure neo4j
-RUN rm -rf /srv/neo4j/conf/neo4j.properties
-RUN rm -rf /srv/neo4j/conf/neo4j-server.properties
+#RUN rm -rf /srv/neo4j/conf/neo4j.properties
+#RUN rm -rf /srv/neo4j/conf/neo4j-server.properties
 ADD neo4j.properties /srv/neo4j/conf/neo4j.properties
 ADD neo4j-server.properties /srv/neo4j/conf/neo4j-server.properties
 
