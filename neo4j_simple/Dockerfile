@@ -11,7 +11,7 @@ ADD supervisord.conf /etc/
 
 # setup NEO4j
 RUN mkdir -p /srv/neo4j
-#ADD /srv/neo4j-community-unix.tar.gz /srv/neo4j/neo4j-community-unix.tar.gz
+#ADD /srv/neo4j-community-unix.tar.gz /srv/neo4j/neo4j-community-unix.tar.gz should be done at runtime
 RUN tar xvzf /srv/neo4j/neo4j-community-unix.tar.gz --strip-components 1
 
 VOLUME /srv/neo4j/data
