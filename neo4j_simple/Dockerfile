@@ -9,10 +9,11 @@ RUN mv -f /etc/supervisord.conf /etc/supervisord.conf.org
 ADD supervisord.conf /etc/
 
 
-# setup NEO4j
+# setup NEO4j (still built in)
 RUN mkdir -p /srv/neo4j
 RUN curl http://neo4j.com/artifact.php?name=neo4j-community-2.3.0-unix.tar.gz -o  /srv/neo4j/neo4j-community-unix.tar.gz
 RUN  tar xvzf /srv/neo4j/neo4j-community-unix.tar.gz --strip-components 1
+RUN rm -rf /srv/neo4j/neo4j-community-unix.tar.gz
 
 VOLUME /srv/neo4j/data
 
