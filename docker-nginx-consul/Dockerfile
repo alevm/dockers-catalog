@@ -1,7 +1,7 @@
 #FROM nginx:latest
-MAINTAINER  levm "av@levm.eu"
 
 FROM    centos:centos7
+MAINTAINER  levm "av@levm.eu"
 RUN yum -y update
 RUN yum -y install epel-release tar
 RUN yum -y install nginx nmap telnet tar net-tools unzip bind-utils curl
