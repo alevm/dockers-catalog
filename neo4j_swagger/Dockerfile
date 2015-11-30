@@ -5,9 +5,12 @@ MAINTAINER  levm "av@levm.eu"
 RUN yum install -y epel-release
 # Install Node.js and npm
 RUN yum install -y nodejs npm
-ADD package.json /opt/
-RUN cd /opt ; npm install
-RUN npm install http-server -g #should go in packages
+#ADD package.json /opt/
+#RUN cd /opt ; npm install
+
+ADD data /srv
+RUN cd /srv/ ; npm install
+
 VOLUME /srv
 EXPOSE  8080
-CMD ["http-server", "/srv/web"]
+CMD ["node", "/srv/app.js"]
