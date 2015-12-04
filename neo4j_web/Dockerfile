@@ -8,9 +8,9 @@ RUN yum install -y nodejs npm
 ADD package.json /opt/
 RUN cd /opt ; npm install
 ADD data /srv
-RUN cd /srv/api ; npm install
+#RUN cd /srv/api ; npm install
 RUN cd /srv/web ; npm install
-RUN npm install http-server -g #should go in packages
+#RUN npm install http-server -g #should go in packages
 VOLUME /srv
 EXPOSE  5000
 CMD ["node", "/srv/web/app.js"]

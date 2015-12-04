@@ -51,7 +51,7 @@ swagger.addValidator(
         apiKey = url.parse(req.url,true).query["api_key"];
       }
 
-      return "special-key" == apiKey;
+      return "Basic bmVvNGo6c3RyYWNhbg==" == apiKey;
     }
     return true;
   }
