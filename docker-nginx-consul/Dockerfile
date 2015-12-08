@@ -3,6 +3,7 @@ MAINTAINER  levm "av@levm.eu"
 RUN apt-get update
 RUN apt-get install unzip
 
+# todo review centos template
 #FROM    centos:centos7
 #RUN yum update -y; yum clean all
 #RUN yum -y install epel-release
