@@ -2,7 +2,7 @@
 
 FROM    centos:centos7
 MAINTAINER  levm "av@levm.eu"
-RUN RUN yum update -y; yum clean all
+RUN yum update -y; yum clean all
 RUN yum -y install epel-release
 RUN yum -y install nginx unzip
 
