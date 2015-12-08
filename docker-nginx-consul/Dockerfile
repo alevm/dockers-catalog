@@ -3,8 +3,8 @@
 FROM    centos:centos7
 MAINTAINER  levm "av@levm.eu"
 RUN RUN yum update -y; yum clean all
-RUN yum -y install epel-release tar; yum clean all
-RUN yum -y install nginx unzip; yum clean all
+RUN yum -y install epel-release
+RUN yum -y install nginx unzip
 
 
 ENTRYPOINT ["/bin/start.sh"]
