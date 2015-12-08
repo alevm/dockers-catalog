@@ -2,9 +2,9 @@
 
 FROM    centos:centos7
 MAINTAINER  levm "av@levm.eu"
-RUN yum -y update
-RUN yum -y install epel-release tar
-RUN yum -y install nginx nmap telnet tar net-tools unzip bind-utils curl
+RUN RUN yum update -y; yum clean all
+RUN yum -y install epel-release tar; yum clean all
+RUN yum -y install nginx unzip; yum clean all
 
 
 ENTRYPOINT ["/bin/start.sh"]
