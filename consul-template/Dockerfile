@@ -9,8 +9,8 @@
 #ENV CONSUL_DOMAIN basic
 #ADD nginx.conf /etc/nginx/nginx.conf
 #ADD start.sh /bin/start.sh
-#ADD https://releases.hashicorp.com/consul-template/0.11.0/consul-template_0.11.0_linux_amd64.zip /usr/bin/
-#RUN unzip /usr/bin/consul-template_0.11.0_linux_amd64.zip -d /usr/bin
+#ADD https://releases.hashicorp.com/consul-template/0.12.0/consul-template_0.12.0_linux_amd64.zip /usr/bin/
+#RUN unzip /usr/bin/consul-template_0.12.0_linux_amd64.zip -d /usr/bin
 
 # CENTOS one
 FROM centos:centos7
@@ -27,3 +27,4 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD start.sh /bin/start.sh
 ADD https://releases.hashicorp.com/consul-template/0.12.0/consul-template_0.12.0_linux_amd64.zip /usr/bin/
 RUN unzip /usr/bin/consul-template_0.12.0_linux_amd64.zip -d /usr/bin
+RUN rm -rf /usr/bin/consul-template_0.12.0_linux_amd64.zip
