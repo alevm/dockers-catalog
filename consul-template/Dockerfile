@@ -13,8 +13,10 @@
 #RUN unzip /usr/bin/consul-template_0.11.1_linux_amd64.zip -d /usr/bin
 
 # CENTOS one
-FROM nginx:latest FROM centos:centos7
-MAINTAINER levm "av@levm.eu" RUN yum -y update RUN yum -y install epel-release tar
+FROM centos:centos7
+MAINTAINER levm "av@levm.eu"
+RUN yum -y update
+RUN yum -y install epel-release tar
 RUN yum -y install nginx nmap telnet tar net-tools unzip bind-utils curl
 ENTRYPOINT ["/bin/start.sh"]
 EXPOSE 80
