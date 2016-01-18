@@ -1,6 +1,7 @@
 {
 	"ui_dir": "/ui",
 	"server": true,
+	"bootstrap": true,
 	"dns_config": {
 		"allow_stale": false
 	}
