@@ -1,0 +1,15 @@
+#!/bin/sh
+set -e
+
+if [ -z "$DISCOURSE_SMTP_ADDRESS" ] || [ -z "$DISCOURSE_DEVELOPER_EMAILS" ]; then
+  echo "You have not setup SMTP or Developer Emails, please set them up."
+  exit 1
+fi
+
+tail -qf /opt/discourse/log/production.log &
+touch /opt/discourse/config/discourse.conf
+chown discourse:discourse /opt/discourse/config/discourse.conf
+for v in $(printenv | grep -P '^DISCOURSE_' | grep -vE '^DISCOURSE_(VERSION|HOME|DATA)'); do
+  echo $v | sed -r 's/^DISCOURSE_([^=]+)(.*)/\L\1\E\2/' >> \
+    /opt/discourse/config/discourse.conf
+done

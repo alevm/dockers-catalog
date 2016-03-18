@@ -1,0 +1,28 @@
+#!/bin/sh
+set -e
+
+if [ -f /etc/startup3.d/discourse/supervise/error ]; then
+  echo "Refusing to start because there was an error."
+  sleep 36864
+fi
+
+cd /opt/discourse
+chpst -u discourse:discourse config/unicorn_launcher \
+  -E production -c config/unicorn.conf.rb &
+
+pid=$!; count=0
+while [ ! -f tmp/pids/unicorn.pid ] && [ "$count" -lt 24 ]; do
+  count=$(echo "$(($count+1))")
+  sleep 1
+done
+
+if [ ! -f tmp/pids/unicorn.pid ]; then
+  touch /etc/startup3.d/discourse/supervise/error
+  echo "There was an error starting rails."
+  exit 1
+else
+  while ! tail /etc/stdout.d/production.log >/dev/null; do
+    sleep 0.1
+  done; wait \
+    $pid
+fi

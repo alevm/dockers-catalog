@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+
+for v in production unicorn.stderr unicorn.stdout; do
+  touch /opt/discourse/log/${v}.log
+  chown discourse:discourse \
+    /opt/discourse/log/$v.log
+done

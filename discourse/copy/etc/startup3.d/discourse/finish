@@ -1,0 +1,9 @@
+#!/bin/sh
+set -e
+
+cd /opt/discourse
+if [ -f tmp/pids/unicorn.pid ]; then
+  kill "$(
+    cat tmp/pids/unicorn.pid
+  )"
+fi

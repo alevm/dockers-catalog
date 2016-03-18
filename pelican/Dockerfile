@@ -20,7 +20,7 @@ RUN sed -i -e 's/Apache/nginx/g' -e '/apache_pb.gif/d' \
     /usr/share/nginx/html/index.html
 
 VOLUME /etc/nginx/conf.d
-#EXPOSE 80
+EXPOSE 80
 
 
 ENTRYPOINT ["nginx"]
